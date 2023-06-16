@@ -15,13 +15,12 @@ This repository contains the dockerfile that can be used to create docker images
 5. run `run_image.sh` or `run_image_debug.sh` for debug.
 
 ### Use published docker image
-1. run `docker pull andyliu61/mindstone:latest`
-2. use the following command to create an container, or use `run_image.sh` in this repo.
+1. use the following command to create an container, or use `run_image.sh` in this repo.
 ```shell
 docker run \
-    --name <container name> \
+    --name mindstone \
     -p <port>:3000 \
-    -v <local post dir>:/root/mindstone/posts \
+    -v <local_post_dir>:/root/mindstone/posts \
     --restart=always \
-    -d obsidian_pub:latest \
+    -d andyliu61/mindstone:latest \
 ``` 

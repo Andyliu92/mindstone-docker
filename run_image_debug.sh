@@ -15,7 +15,7 @@ fi
 
 sudo docker run \
     --rm \
-    --name obsidian_pub \
+    --name mindstone \
     -p $PORT:3000 \
     -v $LOCAL_POST_DIR:/root/mindstone/posts \
-    -it obsidian_pub:latest /bin/bash \
+    -it andyliu61/mindstone:latest /bin/bash \

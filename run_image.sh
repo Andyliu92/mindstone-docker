@@ -14,8 +14,8 @@ if [[ $PORT == "please change PORT" ]] ; then
 fi
 
 sudo docker run \
-    --name obsidian_pub \
+    --name mindstone \
     -p $PORT:3000 \
     -v $LOCAL_POST_DIR:/root/mindstone/posts \
     --restart=always \
-    -d obsidian_pub:latest \
+    -d andyliu61/mindstone:latest \
